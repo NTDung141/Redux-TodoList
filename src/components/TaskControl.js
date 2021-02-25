@@ -5,7 +5,7 @@ import TaskSortControl from "./TaskSort";
 class TaskControl extends Component {
     render() {
         return (
-            <div className="row mt-15">
+            <div className="row mb-3">
                 <TaskSearchControl />
                 <TaskSortControl />
             </div>

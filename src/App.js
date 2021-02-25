@@ -40,7 +40,7 @@ class App extends Component {
     return (
       <div className="container">
         <div className="text-center">
-          <h1>Quản Lý Công Việc</h1>
+          <h1>Task Management</h1>
           <hr />
         </div>
         <div className="row">
@@ -66,9 +66,12 @@ class App extends Component {
               onClick={this.onToggleForm}
             >
               {/* <span className="fa fa-plus mr-5"></span>Thêm Công Việc */}
-              Thêm công việc
+              Add task
             </button>
-            <TaskControl />
+            <div className="mt-3">
+              <TaskControl />
+            </div>
+
             <div className="row mt-15">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <TaskList />

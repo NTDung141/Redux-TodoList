@@ -80,10 +80,10 @@ class TaskList extends Component {
             <table className="table table-bordered table-hover">
                 <thead>
                     <tr>
-                        <th className="text-center">STT</th>
-                        <th className="text-center">Tên</th>
-                        <th className="text-center">Trạng Thái</th>
-                        <th className="text-center">Hành Động</th>
+                        <th className="text-center">Order</th>
+                        <th className="text-center">Name</th>
+                        <th className="text-center">Status</th>
+                        <th className="text-center">Activity</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -105,9 +105,9 @@ class TaskList extends Component {
                                 value={filterStatus}
                                 onChange={this.onChange}
                             >
-                                <option value="-1">Tất Cả</option>
-                                <option value="0">Ẩn</option>
-                                <option value="1">Kích Hoạt</option>
+                                <option value="-1">All</option>
+                                <option value="0">Hide</option>
+                                <option value="1">Active</option>
                             </select>
                         </td>
                         <td></td>

@@ -29,7 +29,7 @@ class TaskItem extends Component {
                         }
                         onClick={this.onUpdateStatus}
                     >
-                        {task.status === true ? "Kích hoạt" : "Ẩn"}
+                        {task.status === true ? "Active" : "Hide"}
                     </button>
                 </td>
                 <td className="text-center">
@@ -38,7 +38,7 @@ class TaskItem extends Component {
                         className="btn btn-warning"
                         onClick={this.onEditTask}
                     >
-                        <span className="fa fa-pencil mr-5"></span>Sửa
+                        <span className="fa fa-pencil mr-5"></span>Update
           </button>
           &nbsp;
           <button
@@ -46,7 +46,7 @@ class TaskItem extends Component {
                         className="btn btn-danger"
                         onClick={this.onDelete}
                     >
-                        <span className="fa fa-trash mr-5"></span>Xóa
+                        <span className="fa fa-trash mr-5"></span>Delete
           </button>
                 </td>
             </tr>

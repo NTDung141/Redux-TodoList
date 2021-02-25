@@ -80,14 +80,14 @@ class TaskForm extends Component {
             <div className="panel panel-warning">
                 <div className="panel-heading">
                     <h3 className="panel-title">
-                        {id ? "Cập nhật công việc" : "Thêm công việc"}
+                        {id ? "Update task" : "Add task"}
                     </h3>
                     <span className="fa fa-times-circle text-right"></span>
                 </div>
                 <div className="panel-body">
                     <form onSubmit={this.onSave}>
                         <div className="form-group">
-                            <label>Tên :</label>
+                            <label>Name :</label>
                             <input
                                 type="text"
                                 className="form-control"
@@ -96,7 +96,7 @@ class TaskForm extends Component {
                                 onChange={this.onChange}
                             />
                         </div>
-                        <label>Trạng Thái :</label>
+                        <label>Status :</label>
                         <select
                             className="form-control"
                             required="required"
@@ -104,8 +104,8 @@ class TaskForm extends Component {
                             value={this.state.status}
                             onChange={this.onChange}
                         >
-                            <option value={true}>Kích Hoạt</option>
-                            <option value={false}>Ẩn</option>
+                            <option value={true}>Active</option>
+                            <option value={false}>Hide</option>
                         </select>
                         <br />
                         <div className="text-center">
@@ -126,7 +126,7 @@ class TaskForm extends Component {
                                 className="btn btn-danger"
                                 onClick={this.onCloseForm}
                             >
-                                Hủy Bỏ
+                                Cancel
               </button>
                         </div>
                     </form>

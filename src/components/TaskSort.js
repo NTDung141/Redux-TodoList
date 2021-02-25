@@ -25,7 +25,7 @@ class TaskSortControl extends Component {
                         aria-haspopup="true"
                         aria-expanded="true"
                     >
-                        Sắp Xếp
+                        Sort
             <span className="fa fa-caret-square-o-down ml-5"></span>
                     </button>
                     <ul className="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -34,7 +34,7 @@ class TaskSortControl extends Component {
                             onClick={() => this.onSort("name", 1)}
                         >
                             <a role="button">
-                                <span className="fa fa-sort-alpha-asc pr-5">Tên A-Z</span>
+                                <span className="fa fa-sort-alpha-asc pr-5">Name A-Z</span>
                             </a>
                         </li>
                         <li
@@ -42,7 +42,7 @@ class TaskSortControl extends Component {
                             onClick={() => this.onSort("name", 0)}
                         >
                             <a role="button">
-                                <span className="fa fa-sort-alpha-desc pr-5">Tên Z-A</span>
+                                <span className="fa fa-sort-alpha-desc pr-5">Name Z-A</span>
                             </a>
                         </li>
                         <li role="separator" className="divider"></li>
@@ -50,13 +50,13 @@ class TaskSortControl extends Component {
                             className="dropdown-item"
                             onClick={() => this.onSort("status", 1)}
                         >
-                            <a role="button">Trạng Thái Kích Hoạt</a>
+                            <a role="button">Status Active</a>
                         </li>
                         <li
                             className="dropdown-item"
                             onClick={() => this.onSort("status", 0)}
                         >
-                            <a role="button">Trạng Thái Ẩn</a>
+                            <a role="button">Status Hide</a>
                         </li>
                     </ul>
                 </div>
